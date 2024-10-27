@@ -108,13 +108,12 @@ public class Main {
             numbers.add(Integer.parseInt(userInput));
         }while(true);
 
-        ArrayList<Integer> swapNumbers = numbers;
         int firstnumber = numbers.get(0);
         int lastnumber = numbers.get(numbers.size()-1);
-        swapNumbers.set(0,lastnumber);
-        swapNumbers.set(numbers.size()-1,firstnumber);
+        numbers.set(0,lastnumber);
+        numbers.set(numbers.size()-1,firstnumber);
 
-        System.out.println("Swapped Array : "+swapNumbers);
+        System.out.println("Swapped Array : "+numbers);
 
     }
 
@@ -131,7 +130,6 @@ public class Main {
             numbers.add(Integer.parseInt(userInput));
         }while(true);
 
-        ArrayList<Integer> sortEvenAndOddNumbers = new ArrayList<>();
         ArrayList<Integer> evenNumbers = new ArrayList<>();
         ArrayList<Integer> oddNumbers = new ArrayList<>();
 
@@ -140,15 +138,16 @@ public class Main {
                 evenNumbers.add(item);
             }else oddNumbers.add(item);
         }
+        numbers.clear();
         for(int item : oddNumbers){
-            sortEvenAndOddNumbers.add(item);
+            numbers.add(item);
         }
         for(int item : evenNumbers){
-            sortEvenAndOddNumbers.add(item);
+            numbers.add(item);
         }
 
 
-        System.out.println(sortEvenAndOddNumbers);
+        System.out.println(numbers);
 
 
     }
@@ -166,6 +165,6 @@ public class Main {
             }
         }
 
-        System.out.println(isEquality);
+        System.out.println("Is Equality : "+isEquality);
     }
 }
