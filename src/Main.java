@@ -10,11 +10,11 @@ public class Main {
 
 
         ExerciseOne();
-        //ExerciseTwo();
-        // ExerciseThree();
-        //ExerciseFour();
-       // ExerciseFive();
-      //  ExerciseSix();
+        ExerciseTwo();
+        ExerciseThree();
+        ExerciseFour();
+        ExerciseFive();
+        ExerciseSix();
 
 
     }
